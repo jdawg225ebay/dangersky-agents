@@ -131,6 +131,7 @@ def send_email(subject, body_text):
         headers={
             "Authorization": "Bearer %s" % RESEND_API_KEY,
             "content-type": "application/json",
+            "User-Agent": "DangerSky-Agent/1.0",
         },
         method="POST",
     )
